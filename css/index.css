@@ -637,14 +637,23 @@ img {
 }
 
 .mmt_box div {
-    width: 5rem;
+    width: 7rem;
     font-size: .2rem;
     margin-bottom: .5rem;
     line-height: 1.4
 }
 @media screen and (max-width: 768px) {
     .mmt_box div {
+        width: 5rem;
         font-size: .24rem;
+    }
+    .mmt_box a {
+        top: 520px!important;
+    }
+}
+@media screen and (max-width: 576px) {
+    .mmt_box a {
+        top: 450px!important;
     }
 }
 .mmt_box a {
