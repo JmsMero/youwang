@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html data-scrapbook-source="https://www.jzyx.com/" data-scrapbook-create="20210719071215392" lang="zh-Hans">
+<head>
+    <title>优网官网</title>
+    <meta data-n-head="ssr" charset="UTF-8">
+    <meta data-n-head="ssr" name="viewport" content="width=device-width, initial-scale=1">
+    <link data-n-head="ssr" rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" href="./css/swiper.m.css">
+    <link rel="stylesheet" href="./css/animate.min.css">
+    <style type="text/css">
+        html, body {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .jz-general-footer {
+            position: relative;
+            background-color: #1c1c1c;
+            font-size: 12px;
+            line-height: 1.5;
+            font-family: sans-serif;
+            overflow: hidden
+        }
+
+        .jz-general-footer [show="768"], .jz-general-footer [show="1024"] {
+            display: none
+        }
+
+        .jz-general-footer, .jz-general-footer a {
+            color: #b3b3b3
+        }
+
+        .jz-general-footer a {
+            text-decoration: none;
+            white-space: nowrap
+        }
+
+        .jz-general-footer a[href]:hover {
+            text-decoration: underline
+        }
+
+        .jz-general-footer span {
+            display: inline-block;
+            vertical-align: top;
+            white-space: nowrap;
+            margin-right: .5em
+        }
+
+        .jz-general-footer button {
+            padding: 0;
+            border: 0;
+            font-size: inherit;
+            outline: none;
+            cursor: pointer
+        }
+
+        .jz-general-footer-wrapper {
+            position: relative;
+            margin: 0 auto;
+            padding: 2em;
+            -moz-box-sizing: content-box;
+            box-sizing: content-box
+        }
+
+        .jz-general-footer-content {
+            margin-left: 72px;
+            padding-left: 2em;
+            border-left: 1px solid #4d4d4d;
+            -moz-box-sizing: content-box;
+            box-sizing: content-box
+        }
+
+        .jz-general-footer-logo {
+            position: absolute;
+            top: 50%;
+            left: 2em;
+            height: 40px;
+            margin-top: -20px;
+            border: none
+        }
+
+        .jz-general-footer-map a {
+            display: inline-block
+        }
+
+        .jz-general-footer-map a:before {
+            content: "-";
+            display: inline-block;
+            margin: 0 .5em
+        }
+
+        .jz-general-footer-map a:first-child:before {
+            content: none
+        }
+
+        .jz-general-footer-app, .jz-general-footer-credentials {
+            margin-right: 60px
+        }
+
+        .jz-general-footer-app a, .jz-general-footer-credentials a {
+            display: inline-block;
+            vertical-align: top;
+            margin-right: .5em
+        }
+
+        .jz-general-footer-backtop {
+            position: absolute;
+            top: 50%;
+            right: 2em;
+            width: 34px;
+            height: 18px;
+            margin-top: -9px;
+            background: url("4106d2988af54f9ea5433ef71194984537a90d30.png") no-repeat;
+            background-size: 100% 100%
+        }
+
+        @media (max-width: 414px) {
+            .jz-general-footer__free {
+                font-size: 10px
+            }
+
+            .jz-general-footer__free .jz-general-footer-content {
+                margin-left: 56px
+            }
+
+            .jz-general-footer__free .jz-general-footer-logo {
+                height: 30px;
+                margin-top: -15px
+            }
+        }
+
+        @media (min-width: 768px) {
+            .jz-general-footer__free div[show="768"] {
+                display: block
+            }
+
+            .jz-general-footer__free span[show="768"] {
+                display: inline-block
+            }
+
+            .jz-general-footer__free a[hide="768"] {
+                display: none
+            }
+
+            .jz-general-footer__free .jz-general-footer-content {
+                width: 550px;
+                margin-left: 86px
+            }
+
+            .jz-general-footer__free .jz-general-footer-logo {
+                height: 50px;
+                margin-top: -25px
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .jz-general-footer__free div[show="1024"] {
+                display: block
+            }
+
+            .jz-general-footer__free .jz-general-footer-wrapper {
+                width: 850px;
+                overflow: hidden
+            }
+
+            .jz-general-footer__free .jz-general-footer-content {
+                float: right;
+                width: 685px;
+                margin-left: 120px;
+                padding-left: 4em
+            }
+
+            .jz-general-footer__free .jz-general-footer-logo {
+                height: 60px;
+                margin-top: -30px
+            }
+
+            .jz-general-footer__free .jz-general-footer-app, .jz-general-footer__free .jz-general-footer-credentials {
+                margin-right: 0
+            }
+
+            .jz-general-footer__free .jz-general-footer-backtop {
+                position: absolute;
+                top: auto;
+                bottom: 2em;
+                margin-top: 0
+            }
+        }
+
+        .jz-general-footer__lock [hide="768"] {
+            display: none
+        }
+
+        .jz-general-footer__lock div[show="768"], .jz-general-footer__lock div[show="1024"] {
+            display: block
+        }
+
+        .jz-general-footer__lock span[show="768"] {
+            display: inline-block
+        }
+
+        .jz-general-footer__lock .jz-general-footer-wrapper {
+            width: 850px;
+            overflow: hidden
+        }
+
+        .jz-general-footer__lock .jz-general-footer-content {
+            float: right;
+            width: 685px;
+            margin-left: 120px;
+            padding-left: 4em
+        }
+
+        .jz-general-footer__lock .jz-general-footer-logo {
+            height: 60px;
+            margin-top: -30px
+        }
+
+        .jz-general-footer__lock .jz-general-footer-app, .jz-general-footer__lock .jz-general-footer-credentials {
+            margin-right: 0
+        }
+
+        .jz-general-footer__lock .jz-general-footer-backtop {
+            position: absolute;
+            top: auto;
+            bottom: 2em;
+            margin-top: 0
+        }
+
+        .swiper-container {
+            /*  width: 320px;
+              height: 480px;*/
+            width: 100%;
+            height: 100%;
+            background: #000;
+
+
+        }
+
+        html, body {
+            height: 100%;
+        }
+
+        .swiper-slide {
+            width: 100%;
+            height: 100%;
+            background-color: #1A1A1A
+        }
+
+        img {
+            display: block;
+        }
+
+        @-webkit-keyframes start {
+            0%, 30% {
+                opacity: 0;
+                -webkit-transform: translate(0, 10px);
+            }
+            60% {
+                opacity: 1;
+                -webkit-transform: translate(0, 0);
+            }
+            100% {
+                opacity: 0;
+                -webkit-transform: translate(0, -8px);
+            }
+        }
+
+        @-moz-keyframes start {
+            0%, 30% {
+                opacity: 0;
+                -moz-transform: translate(0, 10px);
+            }
+            60% {
+                opacity: 1;
+                -moz-transform: translate(0, 0);
+            }
+            100% {
+                opacity: 0;
+                -moz-transform: translate(0, -8px);
+            }
+        }
+
+        @keyframes start {
+            0%, 30% {
+                opacity: 0;
+                transform: translate(0, 10px);
+            }
+            60% {
+                opacity: 1;
+                transform: translate(0, 0);
+            }
+            100% {
+                opacity: 0;
+                transform: translate(0, -8px);
+            }
+        }
+
+        .ani {
+            position: absolute;
+        }
+
+        .txt {
+            position: absolute;
+        }
+
+        #array {
+            position: absolute;
+            z-index: 999;
+            -webkit-animation: start 1.5s infinite ease-in-out;
+        }
+
+        .ys {
+            display: block;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <div>
+        <div id="js-app" class="app-container" style="overflow:hidden;">
+            <div class="app-container nav_2oERi">
+                <a href="" class="logo_35Jya">
+                    <img src="./img/logo.png">
+                </a>
+                <div class="nav_wrap_YQ6-q">
+                    <ul class="bar_2RihU nav_main_3CILh">
+                        <li class="menu_z8nuX bar_list_sil3R current_1NAKd">
+                            <a href="#" aria-current="page"
+                               class="nuxt-link-exact-active nuxt-link-active"><span>首页<i></i></span></a>
+                        </li>
+                        <li class="menu_z8nuX bar_list_sil3R">
+                            <a href="livelihood.html" class=""><span>优家</span></a>
+                        </li>
+                        <li class="menu_z8nuX bar_list_sil3R">
+                            <a href="./cloud.html" class=""><span>边际云</span></a>
+                        </li>
+                        <li class="menu_z8nuX bar_list_sil3R">
+                            <a href="./buyTwo.html" target="_blank"><span>买买兔</span></a>
+                        </li>
+                        <li class="menu_z8nuX bar_list_sil3R">
+                            <a href="./news.html" target="_blank"><span>新闻中心</span></a>
+                        </li>
+                        <li class="menu_z8nuX bar_list_sil3R">
+                            <a href="./aboutUs.html" class=""><span>联系我们</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav_wrap_mini__fyiB">
+                    <div>
+                        <button jz-home-event="toggle" class="toggle_11qu9"><i></i> <i></i> <i></i></button>
+                        <ul class="list_3ubWD">
+                            <li class="menu_z8nuX">
+                                <a href="#" aria-current="page" class="nuxt-link-exact-active nuxt-link-active">
+                                    <span>首页</span></a>
+                            </li>
+                            <li class="menu_z8nuX">
+                                <a href="livelihood.html" target="_blank"><span>优家</span></a>
+                            </li>
+                            <li class="menu_z8nuX">
+                                <a href="./cloud.html" target="_blank"><span>边际云</span></a>
+                            </li>
+                            <li class="menu_z8nuX">
+                                <a href="./buyTwo.html" target="_blank"><span>买买兔</span></a>
+                            </li>
+                            <li class="menu_z8nuX">
+                                <a href="./buyTwo.html" class=""><span>新闻中心</span></a>
+                            </li>
+                            <li class="menu_z8nuX">
+                                <a href="./aboutUs.html" class=""><span>联系我们</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="swiper-appearance">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <section class="swiper-slide swiper-slide1" id="videos">
+                <div class="container_box">
+                    <video id="background_video" loop muted>抱歉，您的浏览器不支持内嵌视频</video>
+                    <!-- #video_cover 是默认的视频封面 -->
+                    <div id="video_cover"></div>
+                    <!-- #overlay 遮罩层 -->
+                    <div id="overlay"></div>
+                    <!-- #video_controls 用来控制视频静音、取消静音 -->
+                    <div id="video_controls"><span id="mute"></span></div>
+                    <!-- section 中添加任意你想展示的HTML内容 -->
+                    <section class="main_content">
+                        <div class="main_content">
+                            <p class="title_content ys ani resize" style="top:150px;" swiper-animate-effect="fadeInDown"
+                               swiper-animate-duration="1.5s" swiper-animate-delay="0s">JSUNET</p>
+                            <p class="ys ani resize" style="top:210px;" swiper-animate-effect="fadeInDown"
+                               swiper-animate-duration="1.5s" swiper-animate-delay="0s">始于储存 不止于储存</p>
+                        </div>
+                    </section>
+                </div>
+                <!--                <div class="container_box">-->
+                <!--                    <img src="./img/video_cover.png" class="swiper_bg_img">-->
+                <!--                    <section style="width: 100%;height: 100%;">-->
+                <!--                        <div class="main_content">-->
+                <!--                            <div class="main_content">-->
+                <!--                                <p class="title_content ys ani resize" style="top:150px;" swiper-animate-effect="fadeInDown"-->
+                <!--                                   swiper-animate-duration="1.5s" swiper-animate-delay="0s">JSUNET</p>-->
+                <!--                                <p class="ys ani resize" style="top:210px;" swiper-animate-effect="fadeInDown"-->
+                <!--                                   swiper-animate-duration="1.5s" swiper-animate-delay="0s">始于储存 不止于储存</p>-->
+                <!--                            </div>-->
+                <!--                        </div>-->
+                <!--                    </section>-->
+                <!--                </div>-->
+            </section>
+            <!---------------slide2-------------->
+            <section class="swiper-slide swiper-slide2">
+                <div class="container_box">
+                    <img src="./img/ups1.png" class="swiper_bg_img">
+                    <section>
+                        <div class="mmt_box">
+                            <p class="title_content ys ani resize" style="top:20px;" swiper-animate-effect="zoomIn"
+                               swiper-animate-duration="1.5s"
+                               swiper-animate-delay="0s">BUY TWO</p>
+                            <p class="title_content ys ani resize" style="top:40px;" swiper-animate-effect="zoomIn"
+                               swiper-animate-duration="1.5s" swiper-animate-delay="0">E-COMMERCE</p>
+                            <h2 class="mmt_title ys ani resize" style="top:60px;" swiper-animate-effect="fadeIn"
+                                swiper-animate-duration="0.5s"
+                                swiper-animate-delay="2s">买买兔电商</h2>
+                            <div class="ys ani resize" style="top:120px;" swiper-animate-effect="rotateInDownLeft"
+                                 swiper-animate-duration="1.5s" swiper-animate-delay="2.5s">
+                                徐州买买兔电子商务有限公司是结合区块链技术构建去中心化的电商平台，以「让人们购物更放心」为品牌使命，致力于提升消费者幸福感、打造品质生活。买买兔以“甄选好物”为运营理念，始终将消费者需求放在首位，定期上架由质检团队亲自试用、严控品质、层层筛选后的家居、生鲜、时尚、数码、工业品等，满足消费者多元化需求。
+                            </div>
+                            <a href="#" class="ys ani resize" style="top:220px;" swiper-animate-effect="bounceInDown"
+                               swiper-animate-duration="0.5s" swiper-animate-delay="4s">关于买买兔></a>
+                        </div>
+                    </section>
+                </div>
+            </section>
+            <!----------------slide3-------------->
+            <section class="swiper-slide swiper-slide3">
+                <div class="container_box">
+                    <img src="./img/ups2.png" class="swiper_bg_img">
+                    <section>
+                        <div class="mmt_box">
+                            <p class="title_content ys ani resize" style="top:20px;"
+                               swiper-animate-effect="bounceInLeft" swiper-animate-duration="1.5s"
+                               swiper-animate-delay="0s">OPTIMAL FAMILY</p>
+                            <p class="title_content ys ani resize" style="top:40px;"
+                               swiper-animate-effect="bounceInLeft"
+                               swiper-animate-duration="1.5s" swiper-animate-delay="0">LIVELIHOOD OF THE PEOPLE</p>
+                            <h2 class="mmt_title ys ani resize" style="top:60px;" swiper-animate-effect="zoomIn"
+                                swiper-animate-duration="0.5s"
+                                swiper-animate-delay="2s">优家民生</h2>
+                            <div class="ys ani resize" style="top:120px;" swiper-animate-effect="bounceInRight"
+                                 swiper-animate-duration="1.5s" swiper-animate-delay="2.5s">
+                                优家民生利用科技互联分布式存储的能力和数字化图文影像手段进行监管、存储、整理可追溯的数据，结合线上+线下打造便民平台和政务监管平台，24小时为群众提供零距离服务，解决百姓社区内生活大小难题，协助做好社区内各项安防保障工作，不断提升改善社区环境，做到事事可追溯，时时可查阅。
+                            </div>
+                            <a href="#" class="ys ani resize" style="top:220px;" swiper-animate-effect="fadeInUp"
+                               swiper-animate-duration="0.5s" swiper-animate-delay="4s">关于优家民生></a>
+                        </div>
+                    </section>
+                </div>
+            </section>
+            <!-------------slide4----------------->
+            <section class="swiper-slide swiper-slide4">
+                <div class="container_box">
+                    <img src="./img/ups3.png" class="swiper_bg_img">
+                    <section>
+                        <div class="mmt_box">
+                            <p class="title_content ys ani resize" style="top:20px;" swiper-animate-effect="bounce"
+                               swiper-animate-duration="1.5s"
+                               swiper-animate-delay="0s">UNET</p>
+                            <p class="title_content ys ani resize" style="top:40px;" swiper-animate-effect="bounce"
+                               swiper-animate-duration="1.5s" swiper-animate-delay="0">LIVELIHOOD OF THE PEOPLE</p>
+                            <h2 class="mmt_title ys ani resize" style="top:60px;" swiper-animate-effect="fadeIn"
+                                swiper-animate-duration="0.5s"
+                                swiper-animate-delay="2s">优网边际云</h2>
+                            <div class="ys ani resize" style="top:120px;" swiper-animate-effect="zoomInDown"
+                                 swiper-animate-duration="1.5s" swiper-animate-delay="2.5s">
+                                优网边际云是江苏优网所搭建的分布式加密云存储系统，具备了区块链所有特点，是结合分布式账本技术、智能合约和P2P网络技术建立起来的共识机制，从而形成了可记录、可追溯、可确权、隐私保护等的技术约束力。在确保对数据防私自删改、可信存储的前提下，解决了大数据的存取及维护性能问题。
+                            </div>
+                            <a href="#" class="ys ani resize" style="top:220px;" swiper-animate-effect="bounceInDown"
+                               swiper-animate-duration="0.5s" swiper-animate-delay="4s">关于边际云></a>
+                        </div>
+                    </section>
+                </div>
+            </section>
+
+
+        </div>
+        <img src="img/arrow.png" style="width:20px;height:15px; top:420px; left:150px;" id="array" class="resize">
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
+
+<script src="./js/jquery-3.3.1.min.js"></script>
+<script src="./js/bideo.js"></script>
+<script src="./js/index.js"></script>
+<script src="./js/swiper.m.js"></script>
+<script src="./js/swiper.animate.min.js"></script>
+<script>
+    (function () {
+        var bv = new Bideo();
+        bv.init({
+            // Video元素
+            videoEl: document.querySelector('#background_video'),
+            // 容器元素
+            container: document.querySelector('body'),
+            // 自适应调整
+            resize: true,
+            // autoplay: false,
+            muteButton: document.querySelector('#mute'),
+            // 加载视频源, 根据实际业务更换自己的视频源文件
+            src: [
+                {
+                    src: 'http://s3.pstatp.com/aweme/resource/web/static/image/index/tvc-v3_4138031.mp4',
+                    type: 'video/mp4'
+                }
+            ],
+            // 一旦视频加载后即将视频封面隐藏
+            onLoad: function () {
+                document.querySelector('#video_cover').style.display = 'none';
+            }
+        });
+    }());
+    // 首页滑屏
+    scaleW = window.innerWidth / 320;
+    scaleH = window.innerHeight / 480;
+    var resizes = document.querySelectorAll('.resize');
+    for (var j = 0; j < resizes.length; j++) {
+        resizes[j].style.width = parseInt(resizes[j].style.width) * scaleW + 'px';
+        resizes[j].style.height = parseInt(resizes[j].style.height) * scaleH + 'px';
+        resizes[j].style.top = parseInt(resizes[j].style.top) * scaleH + 'px';
+        resizes[j].style.left = parseInt(resizes[j].style.left) * scaleW + 'px';
+    }
+    var mySwiper = new Swiper('.swiper-container', {
+        direction: 'vertical',
+        pagination: '.swiper-pagination',
+        // virtualTranslate : true,
+        mousewheelControl: true,
+        onInit: function (swiper) {
+            swiperAnimateCache(swiper);
+            swiperAnimate(swiper);
+        },
+        onSlideChangeEnd: function (swiper) {
+            swiperAnimate(swiper);
+        },
+        onTransitionEnd: function (swiper) {
+            swiperAnimate(swiper);
+        },
+        watchSlidesProgress: true,
+        onProgress: function (swiper) {
+            for (var i = 0; i < swiper.slides.length; i++) {
+                var slide = swiper.slides[i];
+                var progress = slide.progress;
+                var translate = progress * swiper.height / 4;
+                scale = 1 - Math.min(Math.abs(progress * 0.5), 1);
+                var opacity = 1 - Math.min(Math.abs(progress / 2), 0.5);
+                slide.style.opacity = opacity;
+                es = slide.style;
+                es.webkitTransform = es.MsTransform = es.msTransform = es.MozTransform = es.OTransform = es.transform = 'translate3d(0,' + translate + 'px,-' + translate + 'px) scaleY(' + scale + ')';
+
+            }
+        },
+
+        onSetTransition: function (swiper, speed) {
+            for (var i = 0; i < swiper.slides.length; i++) {
+                es = swiper.slides[i].style;
+                es.webkitTransitionDuration = es.MsTransitionDuration = es.msTransitionDuration = es.MozTransitionDuration = es.OTransitionDuration = es.transitionDuration = speed + 'ms';
+
+            }
+        },
+
+
+    })
+</script>
+</body>
+</html>
